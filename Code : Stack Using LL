@@ -98,7 +98,7 @@ The fourth one is Query-5: It tells whether the stack is empty at this point or 
 
 Your Code
 C++ (g++ 5.4)
-1234567891011121314151617
+4748495051525354555657585960616263
 /************************************************************
  
     Following is the structure of the node class 
@@ -122,4 +122,66 @@ PREVIOUS
 
 NEXT
 
+/************************************************************
+ 
+    Following is the structure of the node class 
+ 
+    class Node {
+    	public :
+    	int data;
+    	Node *next;
+
+    	Node(int data) {
+        	this->data = data;
+        	next = NULL;
+    	}
+	};
+
+**************************************************************/
+
+class Stack {
+    Node * t;
+   public:
+    Stack(){
+        Node * base = new Node (-1);
+        t=base;
+    }
+    int getSize() {
+        if(t->data==-1 || !t)
+            return 0;
+        int size=0;
+        for(Node * n=t;n; n=n->next)
+            size++;
+        return size;
+    }
+    bool isEmpty() {
+        if(t->data==-1)
+            return true;
+        return false;
+    }
+    void push(int element) {
+        if(t->data==-1)
+            t->data=element;
+        else{
+            Node * n = new Node (element);
+            n->next=t;
+            t=n;
+        }
+    }
+    int pop() {
+        if(!t)
+            return -1;
+        if(!t->next){
+            int out= t->data;
+            t->data=-1;
+            return out;
+        }
+        int p=t->data;
+        t = t->next;
+        return p;
+    }
+    int top(){
+        return t->data;
+    }
+};
 
