@@ -1,0 +1,64 @@
+
+
+
+
+ASK/VIEW DOUBT
+
+
+SOLUTION
+
+
+HINT
+
+Problem
+Result
+Print Keypad Combinations Code
+Send Feedback
+Given an integer n, using phone keypad find out and print all the possible strings that can be made using digits of input n.
+Note : The order of strings are not important. Just print different strings in new lines.
+Input Format :
+Integer n
+Output Format :
+All possible strings in different lines
+Constraints :
+1 <= n <= 10^6
+Sample Input:
+23
+Sample Output:
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+
+Your Code
+C++ (g++ 5.4)
+1234567891011121314151617
+#include <iostream>
+#include <string>
+using namespace std;
+string kArr[]={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+void key(string s,string s1){
+    if(s.length()==0){
+        cout<<s1<<endl;
+        return;
+    }
+    char c=s[0];
+
+
+CUSTOM INPUT
+
+
+SUBMIT SOLUTION
+
+
+PREVIOUS
+
+
+NEXT
+
+
