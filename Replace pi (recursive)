@@ -1,0 +1,63 @@
+
+
+
+
+ASK/VIEW DOUBT
+
+
+SOLUTION
+
+
+HINT
+
+Problem
+Result
+Replace pi (recursive)
+Send Feedback
+Given a string, compute recursively a new string where all appearances of "pi" have been replaced by "3.14".
+Constraints :
+1 <= |S| <= 50
+where |S| represents the length of string S. 
+Sample Input 1 :
+xpix
+Sample Output :
+x3.14x
+Sample Input 2 :
+pipi
+Sample Output :
+3.143.14
+Sample Input 3 :
+pip
+Sample Output :
+3.14p
+Constraints:-
+1<=|S|<=50
+
+
+Your Code
+C++ (g++ 5.4)
+1234567891011121314151617
+#define SWAP(x,y,t) t=x;x=y;y=t;
+
+void replacePi(char input[]) {
+	// Write your code here
+	if(input[0]=='\0')
+        return;
+	if(input[0]=='p' && input[1]=='i'){
+        input[0]='3',input[1]='.';
+        char s1=input[2], s2=input[3],temp;
+        int i=2;
+
+
+CUSTOM INPUT
+
+
+SUBMIT SOLUTION
+
+
+PREVIOUS
+
+
+NEXT
+
+
