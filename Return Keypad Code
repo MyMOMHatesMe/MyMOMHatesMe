@@ -1,0 +1,63 @@
+
+
+
+
+ASK/VIEW DOUBT
+
+
+SOLUTION
+
+Problem
+Result
+Return Keypad Code
+Send Feedback
+Given an integer n, using phone keypad find out all the possible strings that can be made using digits of input n.
+Return empty string for numbers 0 and 1.
+Note : 1. The order of strings are not important.
+2. Input and output has already been managed for you. You just have to populate the output array and return the count of elements populated in the output array.
+Input Format :
+Integer n
+Output Format :
+All possible strings in different lines
+Constraints :
+1 <= n <= 10^6
+Sample Input:
+23
+Sample Output:
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+
+Your Code
+C++ (g++ 5.4)
+1234567891011121314151617
+#include <string>
+using namespace std;
+
+string number(int num){
+    string out;
+    switch(num){
+        case 2:
+            out= "abc";
+            break;
+        
+
+
+CUSTOM INPUT
+
+
+SUBMIT SOLUTION
+
+
+PREVIOUS
+
+
+NEXT
+
+
