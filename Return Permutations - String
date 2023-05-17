@@ -1,0 +1,60 @@
+
+
+
+
+ASK/VIEW DOUBT
+
+
+SOLUTION
+
+
+HINT
+
+Problem
+Result
+Return Permutations - String
+Send Feedback
+Given a string S, find and return all the possible permutations of the input string.
+Note 1 : The order of permutations is not important.
+Note 2 : If original string contains duplicate characters, permutations will also be duplicates.
+Input Format :
+String S
+Output Format :
+All permutations (in different lines)
+Sample Input :
+abc
+Sample Output :
+abc
+acb
+bac
+bca
+cab
+cba
+
+Your Code
+C++ (g++ 5.4)
+1234567891011121314151617
+#include <string>
+#define SWAP(x ,y ,t) t=x; x=y; y=t;
+using namespace std;
+int g=0;
+
+void permu(string input, string output[], int n=0){
+	if(n==input.length()){
+        output[g++]=input;
+        return;
+    }
+
+
+CUSTOM INPUT
+
+
+SUBMIT SOLUTION
+
+
+PREVIOUS
+
+
+NEXT
+
+
